@@ -1,0 +1,48 @@
+@import "../../common/css/default.less";
+
+.mine-wrapper {
+  .top {
+    height: 298px;
+    width: 100%;
+    background: linear-gradient(270deg,
+        rgba(55, 91, 241, 1) 0%,
+        rgba(76, 157, 250, 1) 100%);
+    overflow: hidden;
+
+    .top-main {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      padding: 0 50px 0 42px;
+      margin-top: 128px;
+
+      .left {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 20px;
+      }
+
+      .center {
+        flex: 1;
+        font-size: @font28;
+        line-height: 0.4rem;
+      }
+    }
+  }
+
+  .bottom {
+    margin-bottom: 20px;
+
+    .am-list-item {
+      height: 116px !important;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+}

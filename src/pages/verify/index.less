@@ -1,0 +1,91 @@
+.verify{
+    .search-area{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top:0;
+        z-index: 99;
+        .type-search,.day-search{
+            width: 50%;
+            .select-search{
+                .select-show{
+                    display: flex;
+                    justify-content: center;
+                    height: 0.88rem;
+                    line-height: 0.88rem;
+                    background: #fff;
+                    .select-show-title{
+                        font-size:0.3rem;
+                        font-family:PingFangSC-Medium;
+                        font-weight:500;
+                        color:rgba(51,51,51,1);
+                    }
+                    .select-show-img{
+                        margin-left:0.5rem;
+                    }
+                }
+                .select-content{
+                    max-height: 7rem;
+                    overflow: scroll;
+                    &.show{
+                        display: block;
+                        transition: .5s all ease-in;
+                    }
+                    &.none{
+                        display: none;
+                        transition: .5s all ease-in;
+                    }
+                    ul{
+                        margin:0;
+                        padding:0;
+                        background:#fff;
+                        box-shadow: 1px 1px 2px #ccc;
+                        li{
+                            list-style-type: none;
+                            height:0.88rem;
+                            line-height: 0.88rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .list-area{
+        background:#fff;
+        .card{
+            padding:0.2rem;
+            padding-left:0.34rem;
+            border-bottom: 1px solid #F4F7F9;
+            .title{
+                padding:0.25rem 0;
+                font-size:0.3rem;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                color:rgba(51,51,51,1);
+            }
+            .content{
+                margin-left:0.2rem;
+                .item{
+                    padding:0.15rem 0;
+                    &.datemonery-item{
+                        display: flex;
+                        justify-content: space-between;
+                        .date{
+                            color:#999999;
+                        }
+                    }
+                    .item-font{
+                        color:#666666;
+                    }
+                    .item-value{
+                        color:#999999;
+                    }
+                }
+            }
+        }
+    }
+    .no-data{
+        margin:3rem auto;
+    }
+}

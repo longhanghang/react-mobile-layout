@@ -1,0 +1,92 @@
+/* 路由前进时的入场/离场动画 */
+.transition-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.router-wrapper {
+    height: 100%;
+}
+
+.forward-enter {
+    opacity: 0;
+    transform: translateX(100%);
+    height: 100%;
+}
+
+.forward-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 300ms;
+    // height:100%;
+}
+
+.forward-exit {
+    opacity: 1;
+    transform: translateX(0);
+    // height:100%;
+}
+
+.forward-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 300ms;
+    height: 100%;
+}
+
+/* 路由后退时的入场/离场动画 */
+.back-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+    height: 100%;
+}
+
+.back-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 300ms;
+    height: 100%;
+}
+
+.back-exit {
+    opacity: 1;
+    transform: translateX(0);
+    // height:100%;
+}
+
+.back-exit-active {
+    opacity: 0;
+    transform: translate(100%);
+    transition: transform 300ms;
+    // height:100%;
+}
+
+// .back-enter-done,.forward-enter-done{
+//     height: 100%;
+// }
+.fade-enter {
+    opacity: 0;
+    height: 100%;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+    height: 100%;
+}
+
+.fade-exit {
+    opacity: 0;
+    height: 100%;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    height: 100%;
+    transition: opacity 300ms;
+    // height:100%;
+}

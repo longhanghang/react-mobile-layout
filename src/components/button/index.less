@@ -1,0 +1,34 @@
+@import "./../../common/css/default";
+
+.border-button,
+.button {
+  &.button-x-yh {
+    padding-bottom: 60px;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    height: 0.8rem;
+    width: 5.6rem;
+    background: linear-gradient(270deg, rgba(55, 91, 241, 1) 0%, rgba(76, 157, 250, 1) 100%);
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    font-size: 0.3rem;
+    outline: 0;
+    border: 0;
+
+    &.disabled {
+      background: #ccc;
+    }
+  }
+
+  .border {
+    color: @color-blue;
+    background: transparent;
+    border: 1px solid @color-blue;
+  }
+
+}

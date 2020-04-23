@@ -1,0 +1,56 @@
+.receipt-list {
+  .am-tabs-tab-bar-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+  }
+  a {
+    color: #333;
+  }
+  color: #333;
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    &-title {
+      padding: 36px 38px;
+      border-bottom: 2px solid rgba(237, 244, 249, 1);
+      align-items: center;
+    }
+    &-list {
+      padding: 22px 48px;
+      border-bottom: 2px solid rgba(237, 244, 249, 1);
+      & > .line {
+        display: flex;
+        justify-content: space-between;
+        line-height: 34px;
+        margin-bottom: 30px;
+      }
+    }
+    &-buttons {
+      padding: 32px 66px;
+      justify-content: flex-end;
+      & button {
+        margin-left: 20px;
+      }
+      button {
+        width: 160px;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 26px;
+        text-align: center;
+        background-color: #bababa;
+        color: #bababa;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        border: 2px solid #bababa;
+        &.active {
+          border: 2px solid rgba(66, 136, 251, 1);
+          color: #4288fb;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "useBuiltIns": "usage",
+            "corejs":2,
+            "targets": {
+              "browsers": "last 2 versions, safari >= 7, ios_saf >= 9, chrome >= 52"
+            }
+          }],
+          "@babel/preset-react"
+
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+        //减少代码冗余
+        "@babel/plugin-transform-runtime",
+        ["import", { "libraryName": "antd-mobile", "style": true }] // `style: true` 会加载 less 文件
+    ]
+}

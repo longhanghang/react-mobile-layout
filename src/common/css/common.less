@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+}
+.flex-column {
+  &:extend(.flex);
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-horizontal-center {
+  &:extend(.flex);
+  justify-content: center;
+}
+.flex-horizontal-between {
+  &:extend(.flex);
+  justify-content: space-between;
+}
+.flex-vertical-center {
+  &:extend(.flex);
+  align-items: center;
+}
+.flex-wrap {
+  &:extend(.flex);
+  flex-wrap: wrap;
+}
+.text-center {
+  text-align: center;
+}
+.link {
+  text-decoration: underline;
+  color: #468bf8;
+}
+.font-blue {
+  color: #468bf8;
+}
+.font-small {
+  font-size: 24px;
+}
+.font-black {
+  color: @color-black;
+}
+.font-red {
+  color: @color-red;
+}
+.font-grey {
+  color: @color-grey;
+}
+.bg-white {
+  background-color: #fff;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-weight-500 {
+  font-weight: 500;
+}

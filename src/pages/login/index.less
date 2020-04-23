@@ -1,0 +1,138 @@
+@import "../../common/css/default.less";
+
+.login-wrapper {
+    background-color: #fff;
+    height: 100%;
+
+    .login-top {
+        width: 100%;
+        height: 450px;
+        background: linear-gradient(270deg, rgba(55, 91, 241, 1) 0%, rgba(76, 157, 250, 1) 100%);
+        border-bottom-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            width: 132px;
+        }
+        .app-name{
+            margin-top:20px;
+            font-size:56px;
+            font-family:PingFangSC-Medium,PingFang SC;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+        }
+    }
+
+    .main {
+            width: 90%;
+            padding-bottom: 86px;
+            box-shadow: 0px 4px 8px 0px rgba(18, 52, 168, 0.11);
+            border-radius: 24px;
+            position: relative;
+            background-color: #fff;
+            top: -100px;
+            z-index: 1;
+            margin: 0 auto;
+            overflow: hidden;
+        .am-tabs {
+            margin-top:60px;
+        }
+        .am-list{
+            margin-top:10px;
+        }
+        h1 {
+            color: @color-blue;
+            text-align: center;
+            padding: 82px 0;
+            font-size: @font30
+        }
+
+        .am-list-content {
+            text-align: right !important
+        }
+
+        .am-list-item .am-input-label {
+            width: 30px !important;
+
+            img {
+                width: @font26;
+                height: auto;
+            }
+        }
+    }
+
+    .Agreement-a,
+    .register {
+        color: @color-blue;
+    }
+
+    .register {
+        display: block;
+        text-align: center;
+        margin-top: 18px;
+        font-size: @font26;
+    }
+
+    .g-code {
+        position: absolute;
+        right: 33px;
+        font-size: @font26;
+        color: @color-blue;
+        height: 100%;
+        background-color: #fff;
+    }
+}
+
+.agr_modal {
+    width: 5.7rem;
+    box-sizing: border-box;
+
+    .pop_body {
+        height: 10.4rem;
+
+        .pop_header {
+            width: 100%;
+            height: 1.06rem;
+            line-height: 1.06rem;
+            text-align: center;
+            border-bottom: 1px solid #D8D8D8;
+            font-size: 0.32rem;
+            font-weight: 500;
+            color: rgba(85, 85, 85, 1);
+            position: relative;
+
+            .close {
+                width: 0.26rem;
+                height: 0.26rem;
+                position: absolute;
+                top: 50%;
+                right: 0.44rem;
+                margin-top: -0.13rem;
+            }
+        }
+
+        .pop_conent {
+            width: 5.06rem;
+            height: 8.48rem;
+            margin: 0px auto;
+            // margin-top: 0.2rem;
+            overflow-y: scroll;
+            font-size: 0.26rem;
+            font-weight: 400;
+            color: rgba(85, 85, 85, 1);
+            text-align: left;
+        }
+    }
+
+    .am-modal-content {
+        padding-top: 0px;
+    }
+
+    .am-modal-body {
+        padding: 0rem !important;
+    }
+}

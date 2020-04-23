@@ -1,0 +1,33 @@
+.loading-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000000000000;
+    background-color: rgba(255, 255, 255, .5);
+
+    .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2rem;
+
+        // height: 2.9rem;
+        img {
+            width: 100%;
+        }
+
+        span {
+            position: absolute;
+            left: 0;
+            // transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+            top: 1.5rem;
+            color: #fff;
+            font-size: .24rem;
+        }
+    }
+}
